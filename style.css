@@ -1,0 +1,352 @@
+body{
+    padding: 0%;
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+    background-color: #000000;
+}
+
+
+aside{
+    width: 500px;
+    height: 2850px;
+    background: rgb(0, 0, 0);
+    float: right;
+    padding: 30px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+header{
+    display: flex;
+    height: 80px;
+    background-color: #445a14;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+height: 80px;
+margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.nav-link{
+    background-color: #96ac60;
+    border: 2px solid #96ac60;
+    padding: 5px 20px;
+    border-radius: .3rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.nav-link:hover{
+    background-color: #a3c571;
+}
+
+.contenedor{
+    margin: 0%;
+    padding: 0px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+}
+.texto-encima{
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    bottom: 75%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    padding: .45rem .95rem;
+    border-radius: .3rem;
+}
+
+.texto-encima:hover{
+    color: black;
+    background-color: #ffffff;
+}
+
+h1{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.carrusel{
+    float: right;
+    width: 300px;
+    height: 100%;
+    background-color: #551111;
+}
+
+.menu{
+    
+    display: flex;
+    height: 380px;
+    width: 62.9%;
+    background-color: #2c3d12;
+    align-items: center;
+    justify-content: space-around;
+    padding: 13px;
+    right: 40px;
+}
+
+.menu img:hover{
+    transform: scale(1.15);
+}
+
+.menu2{
+    display: flex;
+    height: 380px;
+    width: 62.9%;
+    background-color: #2c3d12;
+    align-items: center;
+    justify-content: space-around;
+    padding: 13px;
+    right: 40px;
+}
+
+.menu2 img:hover{
+    transform: scale(1.15);
+}
+
+.mvv{
+    width: 100%;
+    max-width: 700px;
+    margin: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.lbl-menu{
+    background: rgb(141, 15, 15);
+}
+
+.lbl-menu label{
+    display: inline-block;
+    padding: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.lbl-menu label:hover{
+    background: #740505;
+}
+
+.content{
+    position: relative;
+}
+
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: #ffffff;
+    padding-bottom: 40px;
+}
+
+#radio1,#radio2,#radio3,#radio4{
+    display: none;
+}
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2,
+#radio3:checked ~ .tab3,
+#radio4:checked ~ .tab4
+{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.content div:after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: 100%;
+    left: 28px;
+}
+
+.content .tab2:after{
+    left: 122px;
+}
+
+.content .tab3:after{
+    left: 210px;
+}
+
+.form{
+    position: relative;
+    width: 340px;
+    height: 440px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10 #000;
+    margin: 30px;
+    padding: 30px 30px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    margin-top: 300px;
+}
+
+h2{
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 180px;
+    color: grey;
+    border-bottom: 3px solid black; 
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid grey;
+}
+
+input:focus{
+    border-bottom: 2px solid lightblue;
+}
+
+p:before{
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: gray;
+}
+
+button{
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: 2px solid gray;
+    background: 0;
+    color: #000;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover{
+    background: gray;
+    color: white;
+}
+
+#cn{
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: rgb(97, 13, 13);
+    color: white;
+    width: 320px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10 px 40px -14px #000;
+}
+
+span{
+    margin: 0 5px 0 15px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  .calendar {
+    border-radius: 8px;
+    font-family: 'Bebas Neue', cursive;
+    background: #5f943c;
+    width: 30%;
+    max-width: 600px;
+    float: left;
+    margin: 30px;
+    margin-bottom: 50px;
+    padding: .5em 0; }
+    .calendar__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 2em;
+      font-size: 1.2em;
+      text-transform: uppercase; }
+    .calendar__prev, .calendar__next {
+      color: #000000;
+      cursor: pointer;
+      font-size: 1.3em; }
+    .calendar__prev {
+      margin-right: auto; }
+    .calendar__next {
+      margin-left: auto; }
+    .calendar__week, .calendar__dates {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 10px; }
+    .calendar__month, .calendar__year {
+      padding: .5em 1em; }
+    .calendar__item {
+      text-align: center;
+      line-height: 2; }
+    .calendar__today {
+      background: rgb(78, 6, 6);
+      color: white;
+      width: 50%;
+      border-radius: 50%;
+      margin: auto; }
+    .calendar__last-days {
+      opacity: .3; }
+  
+      .container-clock {
+        background: #96ac60;
+        text-align: center;
+        height: 150px;
+        align-items: center;
+    }
+    
+    .container-clock h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    .container-clock p {
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(0, 0, 0);
+        font-size: 2.5rem;
+    }
+
+    #time{
+        padding-top: 10px;
+        color: #000;
+    }
+

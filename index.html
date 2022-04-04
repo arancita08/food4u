@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Food 4 U</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Bebas+Neue&family=Berkshire+Swash&family=Comfortaa:wght@700&family=Cookie&family=Jost:wght@500&family=Merriweather+Sans:wght@500&family=Nunito+Sans:wght@200&family=Send+Flowers&family=Urbanist:wght@600&display=swap" rel="stylesheet">  
+    <script src="script.js" type="text/javascript" defer></script>
+    
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="imagenes/logo.png" alt=""></a>
+            <h1>Food 4 U</h1>
+        </div>
+        
+    <nav>
+        <a href="index.html" class="nav-link">Iniciar sesión</a>
+    </nav>
+    </header>
+
+
+    <aside>
+       
+    </aside>
+
+ 
+    <div class="contenedor">
+        <img src="imagenes/sandwich-2977251_1920.jpg" height="820px" width="840px"> 
+        <a href="index.html"><div class="texto-encima">RESERVACIONES</div></a>
+        
+    </div>
+
+    <div class="menu">
+        <img src="imagenes/bakery-1868396.jpg" height="350px" width="350px">
+        <img src="imagenes/bread-101636.jpg" height="350px" width="350px">
+    </div>
+    <div class="menu2">
+        <img src="imagenes/pizza-2589575_1920.jpg" height="350px" width="350px">
+        <img src="imagenes/coffee-4908764_1920.jpg" height="350px" width="350px">
+    </div>
+
+    <div class="mvv">
+        <div class="lbl-menu">
+            <label for="radio1">Misión</label>
+            <label for="radio2">Visión</label>
+            <label for="radio3">Valores</label>
+        </div>
+
+        <div class="content">
+            <input type="radio"
+            name="radio" id="radio1">
+            <div class="tab1">
+                <h2>Misión</h2>
+                <p class="m1">Satisfacer las necesidades gastronómicas de nuestros clientes, ofreciendo
+                    alimentos y servicios con la más alta calidad, donde se sobrepasen las
+                    expectativas de nuestros clientes y ser un espacio de trabajo que permita la
+                    realización personal y el Desarrollo de sus colaboradores en el grupo.</p>
+            </div>
+
+            <input type="radio"
+            name="radio" id="radio2">
+            <div class="tab2">
+                <h2>Visión</h2>
+                <p class="v1">Nuestra visión a futuro es ayudar a crear una localidad más saludable,
+                    más consciente sobre su nutrición, y que nuestra ciudad tenga una opción
+                    confiable y de bajo costo para comer bien, sin sacrificar el placer de comer.</p>
+            </div>
+
+            <input type="radio"
+            name="radio" id="radio3">
+            <div class="tab3">
+                <h2>Valores</h2>
+                <p class="v2">Honestidad, confianza, firmeza, responsabilidad y liderazgo
+               
+            </div>
+
+        </div>
+    </div>
+
+    <form class="form">
+
+        <h2>Contacto</h2>
+
+        <p type="Nombre:"><input placeholder="Indique su nombre completo"></p>
+        <p type="Email:"><input placeholder="Indique su Email"></p>
+        <p type="Mensaje:"><input placeholder="Indique sus necesidades en este campo"></p>
+
+        <button>Enviar mensaje</button>
+
+        <div id="cn">
+            <span class="fa fa-phone"></span> 7802 1792
+            <span class="fa fa-envelope-o"></span> aranza@food4u.com
+        </div>
+    </form>
+
+    <div class="calendar">
+        <div class="calendar__info">
+            <div class="calendar__prev" id="prev-month">&#9664;</div>
+            <div class="calendar__month" id="month"></div>
+            <div class="calendar__year" id="year"></div>
+            <div class="calendar__next" id="next-month">&#9654;</div>
+        </div>
+    
+        <div class="calendar__week">
+            <div class="calendar__day calendar__item">Mon</div>
+            <div class="calendar__day calendar__item">Tue</div>
+            <div class="calendar__day calendar__item">Wed</div>
+            <div class="calendar__day calendar__item">Thu</div>
+            <div class="calendar__day calendar__item">Fri</div>
+            <div class="calendar__day calendar__item">Sat</div>
+            <div class="calendar__day calendar__item">Sun</div>
+        </div>
+    
+        <div class="calendar__dates" id="dates"></div>
+    </div>
+    
+    <div class="container-clock">
+        <h1 id="time">00:00:00</h1>
+        <p id="date">date</p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+    
+</body>
+</html>
